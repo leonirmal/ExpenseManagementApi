@@ -1,0 +1,32 @@
+@baseUrl = https://localhost:7168
+@token = paste-jwt-token-here
+
+### Health
+GET {{baseUrl}}/api/admin/health
+
+### Register
+POST {{baseUrl}}/api/auth/register
+Content-Type: application/json
+
+{
+  "fullName": "Demo Developer",
+  "email": "demo@example.com",
+  "password": "DemoPass123"
+}
+
+### Login
+POST {{baseUrl}}/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "demo@example.com",
+  "password": "DemoPass123"
+}
+
+### Categories
+GET {{baseUrl}}/api/categories
+Authorization: Bearer {{token}}
+
+### Expenses
+GET {{baseUrl}}/api/expenses?page=1&pageSize=10&sortBy=amount&sortDirection=desc
+Authorization: Bearer {{token}}
