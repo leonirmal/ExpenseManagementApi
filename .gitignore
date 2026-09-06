@@ -1,8 +1,24 @@
+# Build files
 bin/
 obj/
+
+# IDE files
 .vs/
 .idea/
 *.user
 *.suo
+
+# Environment / secrets
 .env
+
+# Azure / Production configuration
+appsettings.json
+appsettings.Development.json
 appsettings.Production.json
+
+# Docker files
+Dockerfile
+docker-compose.postgres.yml
+
+# HTTP test file
+ExpenseManagement.Api.http
