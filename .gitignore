@@ -22,3 +22,4 @@ docker-compose.postgres.yml
 
 # HTTP test file
 ExpenseManagement.Api.http
+ExpenseManagement.Api.httpExpenseManagementApi/appsettings.json
